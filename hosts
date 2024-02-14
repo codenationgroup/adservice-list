@@ -1,0 +1,74 @@
+# Taken from https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+127.0.0.1 localhost
+127.0.0.1 localhost.localdomain
+127.0.0.1 local
+255.255.255.255 broadcasthost
+::1 localhost
+::1 ip6-localhost
+::1 ip6-loopback
+fe80::1%lo0 localhost
+ff00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+0.0.0.0 0.0.0.0
+
+# Now, beginning with harmful links (or trackers that are annoying).
+
+#[bit.ly]
+0.0.0.0 tmo.co
+0.0.0.0 ny.times
+0.0.0.0 bit.ly
+
+#[grabify, and affiliates] FROM https://gist.github.com/M-rcus/9af3207273bf5d30b28c2e3892f1a412
+0.0.0.0 bmwforum.co
+0.0.0.0 catsnthing.com
+0.0.0.0 catsnthings.fun
+0.0.0.0 crabrave.pw
+0.0.0.0 curiouscat.club
+0.0.0.0 datasig.io
+0.0.0.0 datauth.io
+0.0.0.0 dateing.club
+0.0.0.0 discörd.com
+0.0.0.0 disçordapp.com
+0.0.0.0 fortnight.space
+0.0.0.0 fortnitechat.site
+0.0.0.0 freegiftcards.co
+0.0.0.0 gaming-at-my.best
+0.0.0.0 gamingfun.me
+0.0.0.0 grabify.link
+0.0.0.0 headshot.monster
+0.0.0.0 imageshare.best
+0.0.0.0 joinmy.site
+0.0.0.0 leancoding.co
+0.0.0.0 locations.quest
+0.0.0.0 lovebird.guru
+0.0.0.0 minecräft.com
+0.0.0.0 mypic.icu
+0.0.0.0 otherhalf.life
+0.0.0.0 partpicker.shop
+0.0.0.0 progaming.monster
+0.0.0.0 quickmessage.us
+0.0.0.0 screenshare.host
+0.0.0.0 screenshot.best
+0.0.0.0 shrekis.life
+0.0.0.0 sportshub.bar
+0.0.0.0 spottyfly.com
+0.0.0.0 stopify.co
+0.0.0.0 särahah.eu
+0.0.0.0 särahah.pl
+0.0.0.0 trulove.guru
+0.0.0.0 xda-developers.us
+0.0.0.0 yourmy.monster
+0.0.0.0 youshouldclick.us
+0.0.0.0 yoütu.be
+
+#[bad TLDs]
+0.0.0.0 *.tk
+0.0.0.0 *.ml
+# I cant remember any others.
+
+# routing any .thisdevice URLs to localhost
+localhost:* *.thisdevice
+# should route port numbers to localhost:port
